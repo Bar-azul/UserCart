@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/usernameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/milkQuantityTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_below="@id/usernameTextView"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/addMilkButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:layout_below="@id/milkQuantityTextView"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/subtractMilkButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:layout_toEndOf="@id/addMilkButton"
+        android:layout_below="@id/milkQuantityTextView"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/eggsQuantityTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_below="@id/addMilkButton"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/addEggsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:layout_below="@id/eggsQuantityTextView"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/subtractEggsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:layout_toEndOf="@id/addEggsButton"
+        android:layout_below="@id/eggsQuantityTextView"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="173dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="129dp"
+        android:layout_marginTop="415dp"
+        android:layout_marginEnd="125dp"
+        android:text="Save Cart" />
+
+    <Button
+        android:id="@+id/logoutButton"
+        android:layout_width="147dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/saveButton"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="248dp"
+        android:layout_marginTop="-462dp"
+        android:layout_marginEnd="0dp"
+        android:text="Logout" />
+
+</RelativeLayout>
